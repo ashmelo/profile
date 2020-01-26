@@ -1,22 +1,14 @@
-package com.domain;
+package com.beans;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class UserProfile {
+public class UserRequest {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
     private String firstName;
     private String lastName;
     private long phoneNumber;
@@ -27,9 +19,6 @@ public class UserProfile {
     private String country;
     private int pincode;
     private String identityProofType;
-
-    @Column(unique = true)
     private String identityProof;
-
     private String password;
 }
