@@ -12,4 +12,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class ApplicationParameter {
 
     private String policeTokenUrl;
+    private String policeDetailsUrl;
 }

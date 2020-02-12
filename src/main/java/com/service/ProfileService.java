@@ -15,4 +15,5 @@ public interface ProfileService {
     TokenResponse genratePoliceToken(LoginRequest request);
 
     UserResponse getUserDetails(String userId);
+
 }

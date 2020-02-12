@@ -21,3 +21,4 @@ spring:
 
   application:
     policeTokenUrl: http://localhost:9091/admin/api/v1/police_login_token
+    policeDetailsUrl: http://localhost:9091/admin/api/v1/get_police_officer_details

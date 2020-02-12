@@ -41,7 +41,7 @@ public class ProfileController {
     }
 
     @PostMapping(value = "/get_user", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Police login")
+    @ApiOperation(value = "Get User")
     public ResponseEntity<UserResponse> getUserDetails(@RequestParam("userId") String userId) {
         return new ResponseEntity(profileService.getUserDetails(userId), HttpStatus.OK);
     }
